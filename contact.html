@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ｜株式会社VALEK</title>
+    <meta name="description" content="株式会社VALEKへのお問い合わせ。配送のご依頼・採用への応募・その他ご質問はこちらから。">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        [data-fade] {
+            opacity: 0;
+            transform: translateY(32px);
+            transition: opacity .8s cubic-bezier(.16, 1, .3, 1), transform .8s cubic-bezier(.16, 1, .3, 1)
+        }
+
+        [data-fade="up"].is-visible {
+            opacity: 1;
+            transform: translateY(0)
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-bg"></div>
+        <div class="container header-inner">
+            <a href="index.html" class="header-logo">VALEK</a>
+            <nav class="header-nav">
+                <a href="service.html">事業紹介</a><a href="company.html">会社概要</a>
+                <a href="recruit.html">採用情報</a><a href="contact.html">お問い合わせ</a>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:0000000000" class="header-tel">TEL <span class="header-tel-number">000-000-0000</span></a>
+                <a href="contact.html" class="btn btn-orange" style="padding:10px 24px;font-size:0.78rem;">CONTACT</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="メニュー"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="service.html">事業紹介</a><a href="company.html">会社概要</a>
+        <a href="recruit.html">採用情報</a><a href="contact.html">お問い合わせ</a>
+    </nav>
+
+    <section class="page-hero">
+        <div class="page-hero-bg-text">CONTACT</div>
+        <div class="container">
+            <div class="page-hero-en" data-fade="up">CONTACT</div>
+            <div class="page-hero-ja" data-fade="up">お問い合わせ</div>
+        </div>
+    </section>
+
+    <!-- Contact Body -->
+    <section class="section bg-darker grid-bg">
+        <div class="container">
+            <div style="max-width:720px;margin:0 auto;">
+
+                <p style="color:var(--c-gray-300);font-size:0.92rem;line-height:2;margin-bottom:48px;text-align:center;font-weight:300;"
+                    data-fade="up">
+                    配送のご依頼・採用への応募・その他ご質問など、お気軽にお問い合わせください。<br>
+                    フォーム送信後、通常1〜2営業日以内にご連絡いたします。
+                </p>
+
+                <!-- Quick Contact -->
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:56px;" data-stagger>
+                    <div class="card" style="text-align:center;" data-fade="up">
+                        <div class="card-icon" style="margin:0 auto 16px;">📞</div>
+                        <h3 class="card-title">お電話</h3>
+                        <p
+                            style="font-family:var(--font-en);font-size:1.4rem;font-weight:800;color:var(--c-orange);margin:8px 0;">
+                            <a href="tel:0000000000" style="color:var(--c-orange);">000-000-0000</a>
+                        </p>
+                        <p class="card-text" style="font-size:0.78rem;">受付時間：9:00〜20:00</p>
+                    </div>
+                    <div class="card" style="text-align:center;" data-fade="up">
+                        <div class="card-icon" style="margin:0 auto 16px;">💬</div>
+                        <h3 class="card-title">LINE</h3>
+                        <p style="margin:12px 0;">
+                            <a href="#" class="btn btn-outline"
+                                style="padding:10px 28px;font-size:0.82rem;">LINEで相談する</a>
+                        </p>
+                        <p class="card-text" style="font-size:0.78rem;">お気軽にメッセージください</p>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div data-fade="up">
+                    <h2
+                        style="font-size:1.2rem;font-weight:700;margin-bottom:28px;padding-bottom:16px;border-bottom:2px solid var(--c-orange);letter-spacing:0.04em;">
+                        お問い合わせフォーム
+                    </h2>
+
+                    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+                        <div class="form-group">
+                            <label class="form-label">お問い合わせ種別 <span class="required">必須</span></label>
+                            <select name="type" class="form-select" required>
+                                <option value="" disabled selected>選択してください</option>
+                                <option value="配送のご依頼">配送のご依頼</option>
+                                <option value="採用への応募">採用への応募</option>
+                                <option value="その他">その他のお問い合わせ</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">お名前 <span class="required">必須</span></label>
+                            <input type="text" name="name" class="form-input" placeholder="山田 太郎" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">電話番号 <span class="required">必須</span></label>
+                            <input type="tel" name="phone" class="form-input" placeholder="090-0000-0000" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">メールアドレス <span class="required">必須</span></label>
+                            <input type="email" name="email" class="form-input" placeholder="example@mail.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">お問い合わせ内容 <span class="required">必須</span></label>
+                            <textarea name="message" class="form-textarea" placeholder="お問い合わせ内容をご記入ください"
+                                required></textarea>
+                        </div>
+
+                        <div style="text-align:center;margin-top:40px;">
+                            <button type="submit" class="btn btn-orange btn-lg" style="min-width:300px;">送信する</button>
+                        </div>
+
+                    </form>
+
+                    <p
+                        style="color:var(--c-gray-700);font-size:0.78rem;margin-top:24px;text-align:center;line-height:1.8;">
+                        数日経過しても折り返しがない場合、システムの不具合によりメールが届いていない可能性がございます。<br>
+                        お手数ですが、お電話にてご連絡をお願いいたします。
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Access -->
+    <section class="section bg-dark">
+        <div class="container">
+            <div class="section-label" data-fade="up">Access</div>
+            <h2 class="section-heading" data-fade="up">アクセス</h2>
+            <p style="color:var(--c-gray-500);margin-bottom:24px;font-size:0.88rem;" data-fade="up">〒472-0004
+                愛知県知立市南陽2丁目128番地</p>
+            <div class="map-wrapper" data-fade="up">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.5!2d137.04!3d34.98!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z5oSb55Sf55yM55-l56uL5biC5Y2X6Zm9Mjfnm67vvJEyOA!5e0!3m2!1sja!2sjp!4v1700000000000"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div>
+                    <div class="footer-logo">VALEK</div>
+                    <div class="footer-info">株式会社VALEK（バレック）<br>〒472-0004 愛知県知立市南陽2-128<br>TEL: 000-000-0000</div>
+                </div>
+                <nav class="footer-nav">
+                    <a href="index.html">トップ</a><a href="service.html">事業紹介</a><a href="company.html">会社概要</a>
+                    <a href="recruit.html">採用情報</a><a href="recruit/detail.html">募集要項</a><a
+                        href="contact.html">お問い合わせ</a>
+                </nav>
+            </div>
+            <div class="footer-copy">&copy; 2025 VALEK Inc. All Rights Reserved.</div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

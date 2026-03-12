@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事業紹介｜株式会社VALEK</title>
+    <meta name="description" content="軽貨物運送・一般貨物運送・チャーター便・スポット便。120名以上のドライバー体制と誤配率0.001%以下の品質で配送課題を解決します。">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        [data-fade] {
+            opacity: 0;
+            transform: translateY(32px);
+            transition: opacity .8s cubic-bezier(.16, 1, .3, 1), transform .8s cubic-bezier(.16, 1, .3, 1)
+        }
+
+        [data-fade="up"].is-visible {
+            opacity: 1;
+            transform: translateY(0)
+        }
+
+        [data-fade="left"] {
+            transform: translateX(-32px)
+        }
+
+        [data-fade="left"].is-visible {
+            opacity: 1;
+            transform: translateX(0)
+        }
+
+        [data-fade="right"] {
+            transform: translateX(32px)
+        }
+
+        [data-fade="right"].is-visible {
+            opacity: 1;
+            transform: translateX(0)
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-bg"></div>
+        <div class="container header-inner">
+            <a href="index.html" class="header-logo">VALEK</a>
+            <nav class="header-nav">
+                <a href="service.html">事業紹介</a>
+                <a href="company.html">会社概要</a>
+                <a href="recruit.html">採用情報</a>
+                <a href="contact.html">お問い合わせ</a>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:0000000000" class="header-tel">TEL <span class="header-tel-number">000-000-0000</span></a>
+                <a href="contact.html" class="btn btn-orange" style="padding:10px 24px;font-size:0.78rem;">CONTACT</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="メニュー"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="service.html">事業紹介</a><a href="company.html">会社概要</a>
+        <a href="recruit.html">採用情報</a><a href="contact.html">お問い合わせ</a>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-bg-text">SERVICE</div>
+        <div class="container">
+            <div class="page-hero-en" data-fade="up">SERVICE</div>
+            <div class="page-hero-ja" data-fade="up">事業紹介</div>
+        </div>
+    </section>
+
+    <!-- Strength 01 -->
+    <section class="section bg-darker grid-bg">
+        <div class="container">
+            <div class="strength-block">
+                <div data-fade="left">
+                    <div class="strength-num">01</div>
+                    <h2 class="strength-title">誤配率 <span class="text-orange">0.001%以下</span>の<br>配送品質</h2>
+                    <p class="strength-text">
+                        当社は配送品質を最優先事項と位置づけ、ドライバーの教育に妥協しません。入社後の研修はもちろん、稼働開始後も継続的な品質チェックとフィードバックを実施。ドライバー一人ひとりが「届けるプロ」として自覚を持ち、誤配率0.001%以下という業界トップクラスの精度を維持し続けています。荷主様やエンドユーザー様からの信頼を何よりも大切にし、高品質を仕組みで支えることが私たちの強みです。
+                    </p>
+                </div>
+                <div class="strength-image" data-fade="right">※ 写真撮影後に差し替え</div>
+            </div>
+
+            <div class="strength-block reverse">
+                <div data-fade="right">
+                    <div class="strength-num">02</div>
+                    <h2 class="strength-title">120名以上の体制で<br><span class="text-orange">即座に人材を配置</span></h2>
+                    <p class="strength-text">
+                        2023年の設立以降、急速にドライバーネットワークを拡大し、現在120名以上のドライバーが日々稼働しています。この人員規模があるからこそ、欠員が出たエリアへの即日カバー、繁忙期の増員対応、新規エリアへの迅速な展開が可能です。「人が足りない」という運送業界の最大の課題に対して、VALEKは常にスピーディな回答を出せる体制を整えています。
+                    </p>
+                </div>
+                <div class="strength-image" data-fade="left">※ 写真撮影後に差し替え</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section bg-dark">
+        <div class="container">
+            <div class="section-label" data-fade="up">Service List</div>
+            <h2 class="section-heading" data-fade="up">サービス一覧</h2>
+
+            <div class="service-item" data-fade="up">
+                <div class="service-number">01</div>
+                <div>
+                    <h3 class="service-name">軽貨物・一般貨物運送</h3>
+                    <p class="service-desc">
+                        個人宅配を主力とした軽貨物運送事業と、店舗向けの一般貨物運送事業を展開しています。ヤマト運輸・佐川急便・日本郵政といった大手運送会社との取引実績を持ち、車両不足や新規エリア展開における人材確保の課題を解決するパートナーとして活動しています。対応エリアは愛知県全域および静岡県浜松市。安全運転を徹底し、高品質かつ丁寧な配送を実現します。
+                    </p>
+                </div>
+            </div>
+            <div class="service-item" data-fade="up">
+                <div class="service-number">02</div>
+                <div>
+                    <h3 class="service-name">チャーター便</h3>
+                    <p class="service-desc">
+                        通常の運送会社では対応が難しい状況や、緊急で商品を届ける必要がある場合に、全国どこへでも柔軟に対応いたします。時間に敏感な荷物の迅速な配送をお約束し、お客様のビジネスを止めません。</p>
+                </div>
+            </div>
+            <div class="service-item" data-fade="up">
+                <div class="service-number">03</div>
+                <div>
+                    <h3 class="service-name">スポット便</h3>
+                    <p class="service-desc">
+                        繁忙期や予期せぬトラブルが発生した際に、1日単位での臨時配送をサポートします。急な配送ニーズにも柔軟に対応し、お客様に安心の配送ソリューションを提供します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flow -->
+    <section class="section bg-darker">
+        <div class="container">
+            <div class="section-label" data-fade="up">Flow</div>
+            <h2 class="section-heading" data-fade="up">ご依頼の流れ</h2>
+            <div class="flow-grid" data-stagger>
+                <div class="flow-step" data-fade="up">
+                    <div class="flow-step-num">01</div>
+                    <div class="flow-step-title">お問い合わせ</div>
+                    <div class="flow-step-text">電話・フォーム・LINEからお気軽にご連絡ください。</div>
+                </div>
+                <div class="flow-step" data-fade="up">
+                    <div class="flow-step-num">02</div>
+                    <div class="flow-step-title">お見積り</div>
+                    <div class="flow-step-text">ご要望をヒアリングし、最適なプランと金額をご提示します。</div>
+                </div>
+                <div class="flow-step" data-fade="up">
+                    <div class="flow-step-num">03</div>
+                    <div class="flow-step-title">ドライバー手配</div>
+                    <div class="flow-step-text">エリアと物量に応じて最適なドライバーを迅速に手配します。</div>
+                </div>
+                <div class="flow-step" data-fade="up">
+                    <div class="flow-step-num">04</div>
+                    <div class="flow-step-title">集荷・配送開始</div>
+                    <div class="flow-step-text">荷物を集荷し、高品質な配送を開始します。</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section cta-section-dark">
+        <div class="container">
+            <h2 class="cta-heading" data-fade="up">配送のご相談は<span class="text-orange">お気軽に。</span></h2>
+            <p class="cta-sub" data-fade="up">車両不足・人員不足・緊急配送など、どんなご相談でもまずはお問い合わせください。</p>
+            <div class="cta-buttons" data-fade="up">
+                <a href="contact.html" class="btn btn-orange btn-lg">お問い合わせフォーム</a>
+                <a href="tel:0000000000" class="btn btn-outline btn-lg">電話で相談する</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div>
+                    <div class="footer-logo">VALEK</div>
+                    <div class="footer-info">株式会社VALEK（バレック）<br>〒472-0004 愛知県知立市南陽2-128<br>TEL: 000-000-0000</div>
+                </div>
+                <nav class="footer-nav">
+                    <a href="index.html">トップ</a><a href="service.html">事業紹介</a><a href="company.html">会社概要</a>
+                    <a href="recruit.html">採用情報</a><a href="recruit/detail.html">募集要項</a><a
+                        href="contact.html">お問い合わせ</a>
+                </nav>
+            </div>
+            <div class="footer-copy">&copy; 2025 VALEK Inc. All Rights Reserved.</div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

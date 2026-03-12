@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社VALEK（バレック）｜愛知県の軽配送・軽貨物運送</title>
+    <meta name="description" content="株式会社VALEKは愛知県知立市を拠点に、120名以上のドライバーで軽貨物運送・一般貨物運送を展開。誤配率0.001%以下の高品質配送。">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Page-specific fade animation base */
+        [data-fade] {
+            opacity: 0;
+            transform: translateY(32px);
+            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        [data-fade="up"].is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        [data-fade="left"] {
+            transform: translateX(-32px);
+        }
+
+        [data-fade="left"].is-visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        [data-fade="right"] {
+            transform: translateX(32px);
+        }
+
+        [data-fade="right"].is-visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        [data-fade="scale"] {
+            transform: scale(0.95);
+        }
+
+        [data-fade="scale"].is-visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ========== Header ========== -->
+    <header class="header">
+        <div class="header-bg"></div>
+        <div class="container header-inner">
+            <a href="index.html" class="header-logo">VALEK</a>
+            <nav class="header-nav">
+                <a href="service.html">事業紹介</a>
+                <a href="company.html">会社概要</a>
+                <a href="recruit.html">採用情報</a>
+                <a href="contact.html">お問い合わせ</a>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:0000000000" class="header-tel">
+                    TEL <span class="header-tel-number">000-000-0000</span>
+                </a>
+                <a href="contact.html" class="btn btn-orange" style="padding:10px 24px;font-size:0.78rem;">CONTACT</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobileNav">
+        <a href="service.html">事業紹介</a>
+        <a href="company.html">会社概要</a>
+        <a href="recruit.html">採用情報</a>
+        <a href="contact.html">お問い合わせ</a>
+        <a href="tel:0000000000" style="color:var(--c-orange);">TEL: 000-000-0000</a>
+    </nav>
+
+    <!-- ========== Hero ========== -->
+    <section class="hero">
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-orb hero-orb-3"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-lines">
+            <span></span><span></span><span></span>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-label">VALEK Inc.</div>
+            <h1 class="hero-catch">
+                速く、正確に、<br><span class="hero-catch-accent">届ける。</span>
+            </h1>
+            <p class="hero-sub">
+                愛知県を拠点に120名以上のドライバーが稼働。<br>
+                誤配率0.001%以下の品質で、届けるを支える軽貨物運送会社です。
+            </p>
+            <div class="hero-buttons">
+                <a href="service.html" class="btn btn-orange btn-lg">事業内容を見る</a>
+                <a href="recruit.html" class="btn btn-outline btn-lg">採用情報を見る</a>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <span class="hero-scroll-text">Scroll</span>
+            <span class="hero-scroll-line"></span>
+        </div>
+    </section>
+
+    <!-- ========== Numbers ========== -->
+    <section class="section numbers bg-dark">
+        <div class="container">
+            <div class="numbers-grid" data-stagger>
+                <div class="number-item" data-fade="up">
+                    <div class="number-item-value">
+                        <span data-count="0.001">0</span><span class="number-item-unit">%以下</span>
+                    </div>
+                    <div class="number-item-label">誤配率 ─ 徹底した教育で品質を担保</div>
+                </div>
+                <div class="number-item" data-fade="up">
+                    <div class="number-item-value">
+                        <span data-count="120">0</span><span class="number-item-unit">名以上</span>
+                    </div>
+                    <div class="number-item-label">稼働ドライバー数</div>
+                </div>
+                <div class="number-item" data-fade="up">
+                    <div class="number-item-value">
+                        <span data-count="2023">0</span><span class="number-item-unit">年設立</span>
+                    </div>
+                    <div class="number-item-label">設立から急成長を続ける</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Service Digest ========== -->
+    <section class="section bg-darker grid-bg">
+        <div class="container">
+            <div class="section-label" data-fade="up">Service</div>
+            <h2 class="section-heading" data-fade="up">事業紹介</h2>
+            <div class="cards-grid" data-stagger>
+                <div class="card" data-fade="up">
+                    <div class="card-icon">🚛</div>
+                    <h3 class="card-title">軽貨物・一般貨物運送</h3>
+                    <p class="card-text">個人宅配を主力に、運送会社の車両不足や新規エリア展開における人材確保の課題を解決。大手3社との安定した取引実績があります。</p>
+                    <a href="service.html" class="card-link">詳しく見る</a>
+                </div>
+                <div class="card" data-fade="up">
+                    <div class="card-icon">⚡</div>
+                    <h3 class="card-title">チャーター便</h3>
+                    <p class="card-text">通常の配送では対応できない緊急案件にも全国どこでも柔軟に対応。時間に敏感な荷物を確実にお届けします。</p>
+                    <a href="service.html" class="card-link">詳しく見る</a>
+                </div>
+                <div class="card" data-fade="up">
+                    <div class="card-icon">📦</div>
+                    <h3 class="card-title">スポット便</h3>
+                    <p class="card-text">繁忙期や予期せぬトラブル時に、1日単位の臨時配送をサポート。急な配送ニーズに迅速にお応えします。</p>
+                    <a href="service.html" class="card-link">詳しく見る</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Recruit Banner ========== -->
+    <section class="section recruit-banner" style="padding:160px 0;">
+        <div class="container text-center" style="position:relative;z-index:2;">
+            <div class="section-label" style="justify-content:center;color:var(--c-bg);" data-fade="up">Recruit</div>
+            <h2 class="section-heading" data-fade="up">未経験から、月収60万円を目指せる環境。</h2>
+            <div class="recruit-banner-tags" data-stagger>
+                <span class="recruit-banner-tag" data-fade="up">平均年齢25〜26歳</span>
+                <span class="recruit-banner-tag" data-fade="up">完全直行直帰OK</span>
+                <span class="recruit-banner-tag" data-fade="up">異業種出身者多数</span>
+                <span class="recruit-banner-tag" data-fade="up">年収700〜1,000万円</span>
+                <span class="recruit-banner-tag" data-fade="up">BURTLEユニフォーム</span>
+            </div>
+            <a href="recruit.html" class="btn btn-dark btn-lg" data-fade="up">採用情報を見る</a>
+        </div>
+    </section>
+
+    <!-- ========== Footer ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div>
+                    <div class="footer-logo">VALEK</div>
+                    <div class="footer-info">
+                        株式会社VALEK（バレック）<br>
+                        〒472-0004 愛知県知立市南陽2-128<br>
+                        TEL: 000-000-0000
+                    </div>
+                </div>
+                <nav class="footer-nav">
+                    <a href="index.html">トップ</a>
+                    <a href="service.html">事業紹介</a>
+                    <a href="company.html">会社概要</a>
+                    <a href="recruit.html">採用情報</a>
+                    <a href="recruit/detail.html">募集要項</a>
+                    <a href="contact.html">お問い合わせ</a>
+                </nav>
+            </div>
+            <div class="footer-copy">&copy; 2025 VALEK Inc. All Rights Reserved.</div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
