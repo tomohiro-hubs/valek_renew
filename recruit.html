@@ -53,13 +53,13 @@
     <header class="header">
         <div class="header-bg"></div>
         <div class="container header-inner">
-            <a href="index.html" class="header-logo">VALEK</a>
+            <a href="index.html" class="header-logo"><img src="img/logo.png" alt="株式会社VALEK"></a>
             <nav class="header-nav">
                 <a href="service.html">事業紹介</a><a href="company.html">会社概要</a>
                 <a href="recruit.html">採用情報</a><a href="contact.html">お問い合わせ</a>
             </nav>
             <div class="header-actions">
-                <a href="tel:0000000000" class="header-tel">TEL <span class="header-tel-number">000-000-0000</span></a>
+                <a href="tel:0566917020" class="header-tel">TEL <span class="header-tel-number">0566-91-7020</span></a>
                 <a href="contact.html" class="btn btn-orange" style="padding:10px 24px;font-size:0.78rem;">CONTACT</a>
             </div>
             <button class="hamburger" id="hamburger" aria-label="メニュー"><span></span><span></span><span></span></button>
@@ -79,9 +79,10 @@
     </section>
 
     <!-- Catch -->
-    <section class="section bg-darker text-center grid-bg">
-        <div class="container">
-            <h2 style="font-size:clamp(1.5rem,3.5vw,2.4rem);font-weight:900;line-height:1.6;margin-bottom:24px;"
+    <section class="section recruit-hero-section" style="padding:160px 0; position:relative; background: url('img/recruithero.png') no-repeat center center / cover;">
+        <div style="position:absolute; inset:0; background:rgba(10, 10, 10, 0.7); z-index:1;"></div>
+        <div class="container text-center" style="position:relative; z-index:2;">
+            <h2 style="font-size:clamp(1.5rem,3.5vw,2.4rem);font-weight:900;line-height:1.6;margin-bottom:24px; color:#fff;"
                 data-fade="up">
                 未経験でも、<span class="text-orange">月収60万円</span>を目指せる。<br>
                 やる気と根性があれば、<span class="text-orange">人生が変わる。</span>
@@ -93,11 +94,11 @@
         </div>
     </section>
 
-    <!-- 5 Points -->
+    <!-- 6 Points -->
     <section class="section bg-dark">
         <div class="container">
             <div class="section-label" data-fade="up">Point</div>
-            <h2 class="section-heading" data-fade="up">VALEKで働く5つの魅力</h2>
+            <h2 class="section-heading" data-fade="up">VALEKで働く6つの魅力</h2>
             <div class="cards-grid" data-stagger>
                 <div class="card" data-fade="up">
                     <div class="card-icon">🚗</div>
@@ -124,6 +125,11 @@
                     <h3 class="card-title">BURTLE製ユニフォーム貸与</h3>
                     <p class="card-text">ワークウェアブランド「BURTLE」の制服を貸与。新ロゴをあしらったデザインで、見た目もかっこよく、モチベーション高く仕事に取り組めます。</p>
                 </div>
+                <div class="card" data-fade="up">
+                    <div class="card-icon">🚙</div>
+                    <h3 class="card-title">車がなくても安心のリース制度</h3>
+                    <p class="card-text">自社のリース車両（黒ナンバー）をご用意していますので、車をお持ちでない方でもすぐに業務をスタートできます。車のメンテナンス等もサポートするので安心です。</p>
+                </div>
             </div>
         </div>
     </section>
@@ -135,7 +141,9 @@
             <h2 class="section-heading" data-fade="up">ドライバーの1日</h2>
             <p style="color:var(--c-gray-500);font-size:0.82rem;margin-bottom:36px;" data-fade="up">
                 ※あくまで目安です。荷物がなくなり次第業務終了。休憩は自分のタイミングで取れます。</p>
-            <div class="timeline" data-stagger>
+            
+            <div class="timeline-container">
+                <div class="timeline" data-stagger>
                 <div class="timeline-item" data-fade="up">
                     <div class="timeline-time">8:00 – 9:30</div>
                     <div class="timeline-title">荷物の持ち出し・車への積み込み</div>
@@ -171,6 +179,32 @@
                     <div class="timeline-title">最終配達・業務終了</div>
                     <div class="timeline-desc">残りの荷物を配達し、持ち戻り荷物と伝票を返却して業務完了。荷物がなくなれば早く終われます。</div>
                 </div>
+            </div>
+
+            <div class="timeline-gallery" data-fade="left">
+                <!-- 上段 -->
+                <div class="gallery-item">
+                    <img src="img/day-01.png" alt="朝の出勤">
+                </div>
+                <div class="gallery-item">
+                    <img src="img/day-02.png" alt="荷物の積み込み">
+                </div>
+
+                <!-- 大パネル（中段〜下段） -->
+                <div class="gallery-item large">
+                    <img src="img/day-03.png" alt="配達風景">
+                </div>
+
+                <!-- 中段 -->
+                <div class="gallery-item">
+                    <img src="img/day-04.png" alt="ランチ休憩">
+                </div>
+
+                <!-- 下段 -->
+                <div class="gallery-item">
+                    <img src="img/day-05.png" alt="業務終了">
+                </div>
+            </div>
             </div>
         </div>
     </section>
@@ -264,7 +298,7 @@
             <div class="cta-buttons" data-fade="up">
                 <a href="recruit/detail.html" class="btn btn-dark btn-lg">募集要項を見る</a>
                 <a href="contact.html" class="btn btn-white btn-lg">応募フォームへ</a>
-                <a href="tel:0000000000" class="btn btn-lg"
+                <a href="tel:0566917020" class="btn btn-lg"
                     style="background:transparent;border:1.5px solid var(--c-bg);color:var(--c-bg);">電話で問い合わせ</a>
             </div>
         </div>
@@ -274,8 +308,8 @@
         <div class="container">
             <div class="footer-inner">
                 <div>
-                    <div class="footer-logo">VALEK</div>
-                    <div class="footer-info">株式会社VALEK（バレック）<br>〒472-0004 愛知県知立市南陽2-128<br>TEL: 000-000-0000</div>
+                    <div class="footer-logo"><img src="img/logo.png" alt="株式会社VALEK"></div>
+                    <div class="footer-info">株式会社VALEK（バレック）<br>〒472-0004 愛知県知立市南陽2-128<br>TEL: 0566-91-7020</div>
                 </div>
                 <nav class="footer-nav">
                     <a href="index.html">トップ</a><a href="service.html">事業紹介</a><a href="company.html">会社概要</a>

@@ -326,11 +326,20 @@ ul {
 }
 
 .header-logo {
-    font-family: var(--font-display);
-    font-size: 2rem;
-    color: var(--c-orange);
-    letter-spacing: 0.12em;
-    line-height: 1;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header-logo img {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s var(--ease-out-expo);
+}
+
+.header-logo:hover img {
+    transform: scale(1.05);
 }
 
 .header-nav {
@@ -492,9 +501,23 @@ ul {
     min-height: 700px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     overflow: hidden;
     background: var(--c-bg);
+}
+
+.hero-image {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: url('../img/hero.png') no-repeat center center / cover;
+}
+
+.hero-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(10, 10, 10, 0.4), rgba(10, 10, 10, 0.8));
 }
 
 /* Animated gradient orbs */
@@ -594,8 +617,13 @@ ul {
 .hero-content {
     position: relative;
     z-index: 2;
-    text-align: center;
-    padding: 0 20px;
+    text-align: left;
+    padding: 0 40px;
+    margin-right: 5%;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .hero-label {
@@ -650,7 +678,7 @@ ul {
     font-size: clamp(0.88rem, 1.3vw, 1.05rem);
     color: var(--c-gray-300);
     max-width: 600px;
-    margin: 0 auto 48px;
+    margin-bottom: 48px;
     line-height: 2;
     font-weight: 300;
 }
@@ -658,7 +686,7 @@ ul {
 .hero-buttons {
     display: flex;
     gap: 16px;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
@@ -824,15 +852,50 @@ ul {
 }
 
 .card-icon {
-    width: 48px;
-    height: 48px;
-    border-radius: 8px;
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
     background: rgba(255, 151, 29, 0.08);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.3rem;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+.card-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Service Card (Top Page Large Images) */
+.service-card {
+    padding: 0 !important;
+}
+
+.service-card .service-card-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    background: var(--c-surface-3);
+}
+
+.service-card .service-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s var(--ease-out-expo);
+}
+
+.service-card:hover .service-card-image img {
+    transform: scale(1.1);
+}
+
+.service-card .service-card-content {
+    padding: 32px;
 }
 
 .card-title {
@@ -937,12 +1000,41 @@ ul {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
+.recruit-banner .btn {
+    min-width: 240px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.recruit-banner .btn:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
 /* ---------- Page Hero ---------- */
 .page-hero {
-    padding: calc(var(--header-h) + 80px) 0 60px;
+    padding: calc(var(--header-h) + 120px) 0 100px;
     background: var(--c-surface);
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.page-hero.recruit-hero {
+    background: url('../img/recruithero.png') no-repeat center center / cover;
+}
+
+.page-hero.recruit-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(10, 10, 10, 0.8) 30%, rgba(10, 10, 10, 0.4) 100%);
+    z-index: 1;
+}
+
+.page-hero .container {
+    position: relative;
+    z-index: 2;
 }
 
 .page-hero::after {
@@ -1053,6 +1145,13 @@ ul {
     border: 1px solid rgba(255, 151, 29, 0.06);
     position: relative;
     overflow: hidden;
+}
+
+.strength-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 /* Corner accents on image placeholder */
@@ -1225,7 +1324,6 @@ ul {
 .timeline {
     position: relative;
     padding-left: 48px;
-    max-width: 700px;
 }
 
 .timeline::before {
@@ -1288,6 +1386,72 @@ ul {
     line-height: 1.8;
 }
 
+/* Timeline Gallery Layout */
+.timeline-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+}
+
+@media (min-width: 860px) {
+    .timeline-container {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 60px;
+    }
+}
+
+.timeline-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 180px;
+    gap: 16px;
+}
+
+@media (min-width: 860px) {
+    .timeline-gallery {
+        grid-auto-rows: 220px;
+    }
+}
+
+.timeline-gallery .gallery-item {
+    background: var(--c-surface-3);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 151, 29, 0.08);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline-gallery .gallery-item.large {
+    grid-row: span 2;
+}
+
+.timeline-gallery .gallery-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: var(--c-gray-500);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.timeline-gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.6s var(--ease-out-expo);
+}
+
+.timeline-gallery .gallery-item:hover img {
+    transform: scale(1.05);
+}
+
 /* ---------- Income Model ---------- */
 .income-grid {
     display: grid;
@@ -1311,17 +1475,19 @@ ul {
 }
 
 .income-card.highlight::before {
-    content: "RECOMMEND";
+    content: "おすすめ";
     position: absolute;
-    top: 16px;
-    right: -32px;
+    top: 20px;
+    right: -35px;
+    width: 150px;
+    text-align: center;
     background: var(--c-orange);
     color: var(--c-bg);
-    font-family: var(--font-en);
-    font-size: 0.65rem;
+    font-family: var(--font-ja);
+    font-size: 0.75rem;
     font-weight: 700;
-    letter-spacing: 0.1em;
-    padding: 4px 40px;
+    letter-spacing: 0.15em;
+    padding: 4px 0;
     transform: rotate(45deg);
 }
 
@@ -1734,11 +1900,14 @@ ul {
 }
 
 .footer-logo {
-    font-family: var(--font-display);
-    font-size: 1.8rem;
-    color: var(--c-orange);
-    margin-bottom: 20px;
-    letter-spacing: 0.12em;
+    display: block;
+    margin-bottom: 24px;
+}
+
+.footer-logo img {
+    height: 42px;
+    width: auto;
+    object-fit: contain;
 }
 
 .footer-info {
