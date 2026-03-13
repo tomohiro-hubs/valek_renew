@@ -7,36 +7,6 @@
     <title>会社概要｜株式会社VALEK</title>
     <meta name="description" content="株式会社VALEK（バレック）の会社概要。愛知県知立市に本社を構え、軽貨物運送・一般貨物運送を展開。">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        [data-fade] {
-            opacity: 0;
-            transform: translateY(32px);
-            transition: opacity .8s cubic-bezier(.16, 1, .3, 1), transform .8s cubic-bezier(.16, 1, .3, 1)
-        }
-
-        [data-fade="up"].is-visible {
-            opacity: 1;
-            transform: translateY(0)
-        }
-
-        [data-fade="left"] {
-            transform: translateX(-32px)
-        }
-
-        [data-fade="left"].is-visible {
-            opacity: 1;
-            transform: translateX(0)
-        }
-
-        [data-fade="right"] {
-            transform: translateX(32px)
-        }
-
-        [data-fade="right"].is-visible {
-            opacity: 1;
-            transform: translateX(0)
-        }
-    </style>
 </head>
 
 <body>
@@ -51,7 +21,7 @@
             </nav>
             <div class="header-actions">
                 <a href="tel:0566917020" class="header-tel">TEL <span class="header-tel-number">0566-91-7020</span></a>
-                <a href="contact.html" class="btn btn-orange" style="padding:10px 24px;font-size:0.78rem;">CONTACT</a>
+                <a href="contact.html" class="btn btn-orange header-contact-btn">CONTACT</a>
             </div>
             <button class="hamburger" id="hamburger" aria-label="メニュー"><span></span><span></span><span></span></button>
         </div>
@@ -74,7 +44,7 @@
         <div class="container">
             <div class="section-label" data-fade="up">Message</div>
             <h2 class="section-heading" data-fade="up">代表メッセージ</h2>
-            <div class="strength-block" style="padding-top:0;">
+            <div class="strength-block strength-block-first">
                 <div data-fade="left">
                     <p class="strength-text">
                         株式会社VALEKは2023年に設立し、「速く、正確に、届ける」という信念のもと軽貨物運送事業をスタートしました。設立からわずかな期間で120名以上のドライバーを擁する体制を築くことができたのは、ひとえに取引先の皆様とドライバー一人ひとりの努力のおかげです。
@@ -86,8 +56,7 @@
                     <br>
                     <p class="strength-text">
                         愛知県から、日本の物流を支える会社へ。まだまだ若い会社ですが、その分、成長のスピードと柔軟性には自信があります。これからも「届ける」ことに真剣に向き合い続けます。</p>
-                    <p
-                        style="text-align:right;color:var(--c-orange);font-weight:700;font-size:0.95rem;margin-top:24px;">
+                    <p class="message-signature">
                         株式会社VALEK 代表取締役　谷本 大樹</p>
                 </div>
                 <div class="strength-image" data-fade="right">
@@ -146,7 +115,7 @@
         <div class="container">
             <div class="section-label" data-fade="up">Access</div>
             <h2 class="section-heading" data-fade="up">アクセス</h2>
-            <p style="color:var(--c-gray-500);margin-bottom:24px;font-size:0.9rem;" data-fade="up">〒472-0004
+            <p class="access-address" data-fade="up">〒472-0004
                 愛知県知立市南陽2丁目128番地</p>
             <div class="map-wrapper" data-fade="up">
                 <iframe

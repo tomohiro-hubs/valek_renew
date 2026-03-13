@@ -7,45 +7,6 @@
     <title>採用情報｜株式会社VALEK｜軽貨物ドライバー募集</title>
     <meta name="description" content="未経験から月収60万円を目指せる。平均年齢25〜26歳の若手中心の職場で軽貨物ドライバーを募集中。">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        [data-fade] {
-            opacity: 0;
-            transform: translateY(32px);
-            transition: opacity .8s cubic-bezier(.16, 1, .3, 1), transform .8s cubic-bezier(.16, 1, .3, 1)
-        }
-
-        [data-fade="up"].is-visible {
-            opacity: 1;
-            transform: translateY(0)
-        }
-
-        [data-fade="left"] {
-            transform: translateX(-32px)
-        }
-
-        [data-fade="left"].is-visible {
-            opacity: 1;
-            transform: translateX(0)
-        }
-
-        [data-fade="right"] {
-            transform: translateX(32px)
-        }
-
-        [data-fade="right"].is-visible {
-            opacity: 1;
-            transform: translateX(0)
-        }
-
-        [data-fade="scale"] {
-            transform: scale(.95)
-        }
-
-        [data-fade="scale"].is-visible {
-            opacity: 1;
-            transform: scale(1)
-        }
-    </style>
 </head>
 
 <body>
@@ -60,7 +21,7 @@
             </nav>
             <div class="header-actions">
                 <a href="tel:0566917020" class="header-tel">TEL <span class="header-tel-number">0566-91-7020</span></a>
-                <a href="contact.html" class="btn btn-orange" style="padding:10px 24px;font-size:0.78rem;">CONTACT</a>
+                <a href="contact.html" class="btn btn-orange header-contact-btn">CONTACT</a>
             </div>
             <button class="hamburger" id="hamburger" aria-label="メニュー"><span></span><span></span><span></span></button>
         </div>
@@ -79,16 +40,14 @@
     </section>
 
     <!-- Catch -->
-    <section class="section recruit-hero-section" style="padding:160px 0; position:relative; background: url('img/recruithero.png') no-repeat center center / cover;">
-        <div style="position:absolute; inset:0; background:rgba(10, 10, 10, 0.7); z-index:1;"></div>
-        <div class="container text-center" style="position:relative; z-index:2;">
-            <h2 style="font-size:clamp(1.5rem,3.5vw,2.4rem);font-weight:900;line-height:1.6;margin-bottom:24px; color:#fff;"
-                data-fade="up">
+    <section class="section recruit-hero-section">
+        <div class="recruit-hero-overlay"></div>
+        <div class="container text-center recruit-hero-inner">
+            <h2 class="recruit-hero-title" data-fade="up">
                 未経験でも、<span class="text-orange">月収60万円</span>を目指せる。<br>
                 やる気と根性があれば、<span class="text-orange">人生が変わる。</span>
             </h2>
-            <p style="color:var(--c-gray-300);max-width:620px;margin:0 auto;font-size:0.92rem;line-height:2;font-weight:300;"
-                data-fade="up">
+            <p class="recruit-hero-lead" data-fade="up">
                 VALEKは愛知県を中心に、軽貨物配送ドライバーを積極採用中です。経験・学歴・年齢・性別は一切不問。完全未経験からスタートした先輩たちが、今では月収60万円以上を安定して稼いでいます。
             </p>
         </div>
@@ -99,34 +58,34 @@
         <div class="container">
             <div class="section-label" data-fade="up">Point</div>
             <h2 class="section-heading" data-fade="up">VALEKで働く6つの魅力</h2>
-            <div class="cards-grid" data-stagger>
-                <div class="card" data-fade="up">
-                    <div class="card-icon">🚗</div>
+            <div class="cards-grid points-grid" data-stagger>
+                <div class="card point-card" data-fade="up">
+                    <div class="point-num">01</div>
                     <h3 class="card-title">完全直行直帰OK</h3>
                     <p class="card-text">朝に営業所で荷物を積み込んだら、あとは自分のペースで配送。わざわざ営業所に戻る必要はありません。自分のスタイルで効率的に働ける環境です。</p>
                 </div>
-                <div class="card" data-fade="up">
-                    <div class="card-icon">🔥</div>
+                <div class="card point-card" data-fade="up">
+                    <div class="point-num">02</div>
                     <h3 class="card-title">若手中心で明るい職場</h3>
                     <p class="card-text">平均年齢は25〜26歳。年齢が近い仲間が多く、雰囲気は抜群。困ったときは気軽に相談できるフラットな環境が整っています。</p>
                 </div>
-                <div class="card" data-fade="up">
-                    <div class="card-icon">🌟</div>
+                <div class="card point-card" data-fade="up">
+                    <div class="point-num">03</div>
                     <h3 class="card-title">異業種出身者が多数活躍</h3>
                     <p class="card-text">元シェフ、元水族館スタッフ、元自動車メーカー勤務など、バックグラウンドはさまざま。配送経験がなくても、研修制度があるので安心してスタートできます。</p>
                 </div>
-                <div class="card" data-fade="up">
-                    <div class="card-icon">💰</div>
+                <div class="card point-card" data-fade="up">
+                    <div class="point-num">04</div>
                     <h3 class="card-title">稼ぎ方を自分で選べる</h3>
                     <p class="card-text">しっかり休みながら安定した収入を得たい方も、ガッツリ稼いで年収1,000万円を目指したい方も、自分に合った働き方を選ぶことができます。</p>
                 </div>
-                <div class="card" data-fade="up">
-                    <div class="card-icon">👕</div>
+                <div class="card point-card" data-fade="up">
+                    <div class="point-num">05</div>
                     <h3 class="card-title">BURTLE製ユニフォーム貸与</h3>
                     <p class="card-text">ワークウェアブランド「BURTLE」の制服を貸与。新ロゴをあしらったデザインで、見た目もかっこよく、モチベーション高く仕事に取り組めます。</p>
                 </div>
-                <div class="card" data-fade="up">
-                    <div class="card-icon">🚙</div>
+                <div class="card point-card" data-fade="up">
+                    <div class="point-num">06</div>
                     <h3 class="card-title">車がなくても安心のリース制度</h3>
                     <p class="card-text">自社のリース車両（黒ナンバー）をご用意していますので、車をお持ちでない方でもすぐに業務をスタートできます。車のメンテナンス等もサポートするので安心です。</p>
                 </div>
@@ -139,7 +98,7 @@
         <div class="container">
             <div class="section-label" data-fade="up">One Day</div>
             <h2 class="section-heading" data-fade="up">ドライバーの1日</h2>
-            <p style="color:var(--c-gray-500);font-size:0.82rem;margin-bottom:36px;" data-fade="up">
+            <p class="section-note" data-fade="up">
                 ※あくまで目安です。荷物がなくなり次第業務終了。休憩は自分のタイミングで取れます。</p>
             
             <div class="timeline-container">
@@ -214,7 +173,7 @@
         <div class="container">
             <div class="section-label" data-fade="up">Income</div>
             <h2 class="section-heading" data-fade="up">収入モデル</h2>
-            <p style="color:var(--c-gray-300);margin-bottom:36px;font-size:0.9rem;font-weight:300;" data-fade="up">
+            <p class="section-lead" data-fade="up">
                 1件あたり160円〜の完全歩合制。頑張った分だけ収入に直結します。</p>
             <div class="income-grid" data-stagger>
                 <div class="income-card" data-fade="up">
@@ -238,7 +197,7 @@
                     </div>
                 </div>
             </div>
-            <p style="color:var(--c-gray-500);font-size:0.78rem;margin-top:20px;text-align:center;">
+            <p class="section-footnote">
                 ※品質評価による単価アップ制度あり（10円単位で随時評価）。車両自己保有の場合、手取りはさらに増えます。
             </p>
         </div>
@@ -249,43 +208,93 @@
         <div class="container">
             <div class="section-label" data-fade="up">Voice</div>
             <h2 class="section-heading" data-fade="up">転職者の声</h2>
-            <div class="voice-grid" data-stagger>
-                <div class="voice-card" data-fade="up">
-                    <div class="voice-card-header">
-                        <div class="voice-avatar">R</div>
-                        <div>
-                            <div class="voice-name">Rさん</div>
-                            <div class="voice-prev">前職：工場勤務</div>
+            <div class="voice-slider" data-fade="up">
+                <button class="voice-nav voice-nav-prev" type="button" aria-label="前の声へ" data-voice-prev>
+                    <span aria-hidden="true">←</span>
+                </button>
+                <div class="voice-slider-track" id="voiceSlider" tabindex="0">
+                    <article class="voice-card">
+                        <div class="voice-card-header">
+                            <div class="voice-avatar">R</div>
+                            <div>
+                                <div class="voice-name">Rさん（27歳）</div>
+                                <div class="voice-prev">前職：工場勤務</div>
+                                <div class="voice-meta">入社1年2か月 / 月収56万円 / 月22日稼働</div>
+                            </div>
                         </div>
-                    </div>
-                    <p class="voice-text">
-                        軽運送業界への転職は新しい挑戦でしたが、工場勤務と比べて給与面でも大きな満足を得ています。自分のペースで働けて、配達した分だけ評価されるシステムがモチベーションにつながっています。休日の相談もしやすく、プライベートの時間を大切にできています。
-                    </p>
-                </div>
-                <div class="voice-card" data-fade="up">
-                    <div class="voice-card-header">
-                        <div class="voice-avatar">T</div>
-                        <div>
-                            <div class="voice-name">Tさん</div>
-                            <div class="voice-prev">前職：大手自動車メーカー</div>
+                        <p class="voice-text">
+                            固定シフトの働き方が合わず転職しました。今は配送量を自分で調整できるので、収入と休みのバランスを取りやすいです。3か月目から月収50万円台に乗り、生活面の不安が減りました。
+                        </p>
+                    </article>
+                    <article class="voice-card">
+                        <div class="voice-card-header">
+                            <div class="voice-avatar">T</div>
+                            <div>
+                                <div class="voice-name">Tさん（31歳）</div>
+                                <div class="voice-prev">前職：自動車部品メーカー</div>
+                                <div class="voice-meta">入社10か月 / 月収62万円 / 月24日稼働</div>
+                            </div>
                         </div>
-                    </div>
-                    <p class="voice-text">
-                        従業員7万人規模の大手に勤めていましたが、頑張りが給料に反映されにくいことにやりがいを感じられずにいました。この仕事は配達数が直接収入になるので、常に高いモチベーションで働けています。休みの融通も利きやすく、充実した毎日です。
-                    </p>
-                </div>
-                <div class="voice-card" data-fade="up">
-                    <div class="voice-card-header">
-                        <div class="voice-avatar">K</div>
-                        <div>
-                            <div class="voice-name">Kさん</div>
-                            <div class="voice-prev">前職：未経験</div>
+                        <p class="voice-text">
+                            評価が年1回だけの環境から、成果が毎月数字で返ってくる仕事に変えたくて入社。最初は配達ルートの組み方で苦戦しましたが、先輩の同乗サポートで改善でき、今は安定して稼げています。
+                        </p>
+                    </article>
+                    <article class="voice-card">
+                        <div class="voice-card-header">
+                            <div class="voice-avatar">K</div>
+                            <div>
+                                <div class="voice-name">Kさん（24歳）</div>
+                                <div class="voice-prev">前職：飲食店スタッフ</div>
+                                <div class="voice-meta">入社8か月 / 月収49万円 / 月21日稼働</div>
+                            </div>
                         </div>
-                    </div>
-                    <p class="voice-text">
-                        完全未経験からのスタートで不安でしたが、最初から丁寧に教えてもらえたので安心して取り組めました。頑張るほど給与に反映されるのでやる気が出ますし、一人で黙々と仕事ができてストレスも少ない。健康的に痩せることもできました。
-                    </p>
+                        <p class="voice-text">
+                            未経験で不安でしたが、端末操作や積み込みのコツを最初にしっかり教えてもらえました。体力的には慣れが必要ですが、やった分が収入になるので納得感があります。人間関係もフラットです。
+                        </p>
+                    </article>
+                    <article class="voice-card">
+                        <div class="voice-card-header">
+                            <div class="voice-avatar">S</div>
+                            <div>
+                                <div class="voice-name">Sさん（35歳）</div>
+                                <div class="voice-prev">前職：営業職</div>
+                                <div class="voice-meta">入社1年7か月 / 月収58万円 / 月23日稼働</div>
+                            </div>
+                        </div>
+                        <p class="voice-text">
+                            営業時代は帰社後の事務作業で毎日遅くなっていました。今は業務終了が明確で、家族との時間を確保しやすいです。収入は前職と同等以上を維持しながら、精神的な負担がかなり減りました。
+                        </p>
+                    </article>
+                    <article class="voice-card">
+                        <div class="voice-card-header">
+                            <div class="voice-avatar">M</div>
+                            <div>
+                                <div class="voice-name">Mさん（29歳）</div>
+                                <div class="voice-prev">前職：アパレル販売</div>
+                                <div class="voice-meta">入社6か月 / 月収45万円 / 月20日稼働</div>
+                            </div>
+                        </div>
+                        <p class="voice-text">
+                            接客経験を活かせると思って応募しました。置き配や再配達の案内で丁寧に対応すると、クレームも減り評価にもつながります。月ごとの目標を自分で決めて働けるのが自分には合っています。
+                        </p>
+                    </article>
+                    <article class="voice-card">
+                        <div class="voice-card-header">
+                            <div class="voice-avatar">Y</div>
+                            <div>
+                                <div class="voice-name">Yさん（33歳）</div>
+                                <div class="voice-prev">前職：建設現場スタッフ</div>
+                                <div class="voice-meta">入社1年11か月 / 月収66万円 / 月25日稼働</div>
+                            </div>
+                        </div>
+                        <p class="voice-text">
+                            体を動かす仕事は続けたくて、より収入を伸ばせる環境を探していました。繁忙期はしっかり稼ぎ、閑散期は休みを増やすなど調整できるのが魅力です。半年で手取りの平均が大きく改善しました。
+                        </p>
+                    </article>
                 </div>
+                <button class="voice-nav voice-nav-next" type="button" aria-label="次の声へ" data-voice-next>
+                    <span aria-hidden="true">→</span>
+                </button>
             </div>
         </div>
     </section>
@@ -293,13 +302,12 @@
     <!-- CTA -->
     <section class="cta-section cta-section-orange">
         <div class="container">
-            <h2 class="cta-heading" style="color:var(--c-bg);" data-fade="up">まずは気軽に話を聞いてみませんか？</h2>
+            <h2 class="cta-heading" data-fade="up">まずは気軽に話を聞いてみませんか？</h2>
             <p class="cta-sub" data-fade="up">応募から最短1週間で勤務開始OK。電話・LINE・フォームからお気軽にどうぞ。</p>
             <div class="cta-buttons" data-fade="up">
                 <a href="recruit/detail.html" class="btn btn-dark btn-lg">募集要項を見る</a>
                 <a href="contact.html" class="btn btn-white btn-lg">応募フォームへ</a>
-                <a href="tel:0566917020" class="btn btn-lg"
-                    style="background:transparent;border:1.5px solid var(--c-bg);color:var(--c-bg);">電話で問い合わせ</a>
+                <a href="tel:0566917020" class="btn btn-outline-dark btn-lg">電話で問い合わせ</a>
             </div>
         </div>
     </section>
@@ -324,4 +332,3 @@
 </body>
 
 </html>
-Copy

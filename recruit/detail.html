@@ -7,18 +7,6 @@
     <title>募集要項｜採用情報｜株式会社VALEK</title>
     <meta name="description" content="株式会社VALEKの軽貨物ドライバー募集要項。業務委託、月収40〜80万円、未経験歓迎。">
     <link rel="stylesheet" href="../css/style.css">
-    <style>
-        [data-fade] {
-            opacity: 0;
-            transform: translateY(32px);
-            transition: opacity .8s cubic-bezier(.16, 1, .3, 1), transform .8s cubic-bezier(.16, 1, .3, 1)
-        }
-
-        [data-fade="up"].is-visible {
-            opacity: 1;
-            transform: translateY(0)
-        }
-    </style>
 </head>
 
 <body>
@@ -33,8 +21,7 @@
             </nav>
             <div class="header-actions">
                 <a href="tel:0566917020" class="header-tel">TEL <span class="header-tel-number">0566-91-7020</span></a>
-                <a href="../contact.html" class="btn btn-orange"
-                    style="padding:10px 24px;font-size:0.78rem;">CONTACT</a>
+                <a href="../contact.html" class="btn btn-orange header-contact-btn">CONTACT</a>
             </div>
             <button class="hamburger" id="hamburger" aria-label="メニュー"><span></span><span></span><span></span></button>
         </div>
@@ -103,7 +90,7 @@
         <div class="container">
             <div class="section-label" data-fade="up">Vehicle</div>
             <h2 class="section-heading" data-fade="up">車両について</h2>
-            <div class="cards-grid" style="grid-template-columns:1fr 1fr;" data-stagger>
+            <div class="cards-grid detail-grid-2" data-stagger>
                 <div class="card" data-fade="up">
                     <div class="card-icon">🚙</div>
                     <h3 class="card-title">車両をお持ちでない方</h3>
@@ -123,7 +110,7 @@
         <div class="container">
             <div class="section-label" data-fade="up">Benefits</div>
             <h2 class="section-heading" data-fade="up">福利厚生</h2>
-            <div class="cards-grid" style="grid-template-columns:repeat(3,1fr);" data-stagger>
+            <div class="cards-grid detail-grid-3" data-stagger>
                 <div class="card" data-fade="up">
                     <div class="card-icon">👕</div>
                     <h3 class="card-title">制服貸与</h3>
@@ -169,7 +156,7 @@
                     </ul>
                 </div>
             </div>
-            <p style="color:var(--c-gray-500);font-size:0.82rem;margin-top:24px;text-align:center;" data-fade="up">
+            <p class="section-footnote detail-footnote-tight" data-fade="up">
                 ※経験・学歴・年齢・性別は一切不問です。完全未経験の方も安心してご応募ください。
             </p>
         </div>
@@ -180,7 +167,7 @@
         <div class="container">
             <div class="section-label" data-fade="up">Ideal Person</div>
             <h2 class="section-heading" data-fade="up">こんな方に向いています</h2>
-            <div class="cards-grid" style="grid-template-columns:1fr 1fr;" data-stagger>
+            <div class="cards-grid detail-grid-2" data-stagger>
                 <div class="card" data-fade="up">
                     <div class="card-icon">🎯</div>
                     <h3 class="card-title">黙々と取り組める方</h3>
@@ -223,8 +210,7 @@
                 <div class="selection-arrow" data-fade="up">▶</div>
                 <div class="selection-step" data-fade="up">
                     <div class="selection-step-num">STEP 03</div>
-                    <div class="selection-step-text">研修・同乗<br><small
-                            style="color:var(--c-gray-500);font-size:0.72rem;">約1〜2週間</small></div>
+                    <div class="selection-step-text">研修・同乗<br><small class="selection-step-sub">約1〜2週間</small></div>
                 </div>
                 <div class="selection-arrow" data-fade="up">▶</div>
                 <div class="selection-step" data-fade="up">
@@ -232,8 +218,8 @@
                     <div class="selection-step-text">正式稼働</div>
                 </div>
             </div>
-            <p style="color:var(--c-gray-300);font-size:0.88rem;margin-top:28px;" data-fade="up">
-                面接はオンラインまたは対面で実施。応募から<span class="text-orange" style="font-weight:700;">最短1週間</span>で勤務開始が可能です。
+            <p class="detail-process-note" data-fade="up">
+                面接はオンラインまたは対面で実施。応募から<span class="text-orange detail-process-accent">最短1週間</span>で勤務開始が可能です。
             </p>
         </div>
     </section>
@@ -241,13 +227,12 @@
     <!-- CTA -->
     <section class="cta-section cta-section-orange">
         <div class="container">
-            <h2 class="cta-heading" style="color:var(--c-bg);" data-fade="up">あなたのエントリーを待っています。</h2>
+            <h2 class="cta-heading" data-fade="up">あなたのエントリーを待っています。</h2>
             <p class="cta-sub" data-fade="up">少しでも興味があれば、まずはお気軽にご連絡ください。</p>
             <div class="cta-buttons" data-fade="up">
                 <a href="../contact.html" class="btn btn-dark btn-lg">応募フォームへ</a>
                 <a href="#" class="btn btn-white btn-lg">LINEで相談する</a>
-                <a href="tel:0566917020" class="btn btn-lg"
-                    style="background:transparent;border:1.5px solid var(--c-bg);color:var(--c-bg);">電話で問い合わせ</a>
+                <a href="tel:0566917020" class="btn btn-outline-dark btn-lg">電話で問い合わせ</a>
             </div>
         </div>
     </section>

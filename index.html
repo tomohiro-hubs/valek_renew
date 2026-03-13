@@ -7,50 +7,9 @@
     <title>株式会社VALEK（バレック）｜愛知県の軽配送・軽貨物運送</title>
     <meta name="description" content="株式会社VALEKは愛知県知立市を拠点に、120名以上のドライバーで軽貨物運送・一般貨物運送を展開。誤配率0.001%以下の高品質配送。">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        /* Page-specific fade animation base */
-        [data-fade] {
-            opacity: 0;
-            transform: translateY(32px);
-            transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        [data-fade="up"].is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        [data-fade="left"] {
-            transform: translateX(-32px);
-        }
-
-        [data-fade="left"].is-visible {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        [data-fade="right"] {
-            transform: translateX(32px);
-        }
-
-        [data-fade="right"].is-visible {
-            opacity: 1;
-            transform: translateX(0);
-        }
-
-        [data-fade="scale"] {
-            transform: scale(0.95);
-        }
-
-        [data-fade="scale"].is-visible {
-            opacity: 1;
-            transform: scale(1);
-        }
-    </style>
 </head>
 
-<body>
+<body class="home-page">
 
     <!-- ========== Header ========== -->
     <header class="header">
@@ -67,9 +26,9 @@
                 <a href="tel:0566917020" class="header-tel">
                     TEL <span class="header-tel-number">0566-91-7020</span>
                 </a>
-                <a href="contact.html" class="btn btn-orange" style="padding:10px 24px;font-size:0.78rem;">CONTACT</a>
+                <a href="contact.html" class="btn btn-orange header-contact-btn">CONTACT</a>
             </div>
-            <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+            <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobileNav">
                 <span></span><span></span><span></span>
             </button>
         </div>
@@ -80,7 +39,7 @@
         <a href="company.html">会社概要</a>
         <a href="recruit.html">採用情報</a>
         <a href="contact.html">お問い合わせ</a>
-        <a href="tel:0566917020" style="color:var(--c-orange);">TEL: 0566-91-7020</a>
+        <a href="tel:0566917020" class="mobile-nav-tel">TEL: 0566-91-7020</a>
     </nav>
 
     <!-- ========== Hero ========== -->
@@ -95,7 +54,7 @@
         </div>
 
         <div class="hero-content">
-            <div class="hero-label">VALEK Inc.</div>
+            <div class="hero-divider" aria-hidden="true"></div>
             <h1 class="hero-catch">
                 速く、正確に、<br><span class="hero-catch-accent">届ける。</span>
             </h1>
@@ -103,8 +62,13 @@
                 愛知県を拠点に120名以上のドライバーが稼働。<br>
                 誤配率0.001%以下の品質で、届けるを支える軽貨物運送会社です。
             </p>
+            <div class="hero-trust" data-stagger>
+                <span class="hero-trust-item" data-fade="up">誤配率 0.001%以下</span>
+                <span class="hero-trust-item" data-fade="up">120名以上の稼働体制</span>
+                <span class="hero-trust-item" data-fade="up">愛知県全域に対応</span>
+            </div>
             <div class="hero-buttons">
-                <a href="service.html" class="btn btn-orange btn-lg">事業内容を見る</a>
+                <a href="contact.html" class="btn btn-orange btn-lg">無料で相談する</a>
                 <a href="recruit.html" class="btn btn-outline btn-lg">採用情報を見る</a>
             </div>
         </div>
@@ -152,9 +116,9 @@
     </section>
 
     <!-- ========== Recruit Banner ========== -->
-    <section class="section recruit-banner" style="padding:160px 0;">
-        <div class="container text-center" style="position:relative;z-index:2;">
-            <div class="section-label" style="justify-content:center;color:var(--c-bg);" data-fade="up">Recruit</div>
+    <section class="section recruit-banner recruit-banner-section">
+        <div class="container text-center recruit-banner-inner">
+            <div class="section-label section-label-dark-center" data-fade="up">Recruit</div>
             <h2 class="section-heading" data-fade="up">未経験から、月収60万円を目指せる環境。</h2>
             <div class="recruit-banner-tags" data-stagger>
                 <span class="recruit-banner-tag" data-fade="up">平均年齢25〜26歳</span>
@@ -166,6 +130,11 @@
             <a href="recruit.html" class="btn btn-white btn-lg" data-fade="up">採用情報を見る</a>
         </div>
     </section>
+
+    <div class="mobile-quick-actions" aria-label="クイックアクション">
+        <a href="tel:0566917020" class="mobile-quick-btn mobile-quick-btn-outline">電話で相談</a>
+        <a href="contact.html" class="mobile-quick-btn mobile-quick-btn-solid">お問い合わせ</a>
+    </div>
 
     <!-- ========== Footer ========== -->
     <footer class="footer">
